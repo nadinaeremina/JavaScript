@@ -1,0 +1,35 @@
+#forest{
+    width: 1000px;
+    min-width: 1000px;
+    height: 700px;
+    min-height: 700px;
+    background-image: url('./img/forest.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    
+.mushrooms{
+    width: 70px;
+    position: absolute;
+}
+
+#box{
+    position: absolute;
+    width: 200px;
+}
+
+#score{
+    background-color: antiquewhite;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+}
+
+#mush{
+    display: flex;
+}
+
+#click{
+    display: flex;
+}

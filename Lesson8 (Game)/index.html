@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="css/game.css" type="text/css">
+</head>
+<body>
+
+    <div id="class" class="field">
+        <!-- 'draggable' - св-во, кот. позволяет двигать картинку -->
+        <img src="img/ball.png" alt="ball" class="ball" draggable="true">
+        <div class="board">
+            <div><b>Счёт:</b></div>
+            <div id="left_score">0</div>
+            <div>:</div>
+            <div id="right_score">0</div>
+        </div>
+    </div>
+
+    <!-- type="application/javascript" - для облегчения работы браузера, чтобы он понимал, какой контетнт здесь-->
+    <script src="js/app.js" type="application/javascript"></script>
+</body>
+</html>
+
+<!-- // https://learn.javascript.ru/mouse-drag-and-drop -->

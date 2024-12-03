@@ -1,0 +1,176 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#my_header{
+  width: 100%;
+  background-color: rgb(241, 233, 233);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#my_title{
+  font-size: larger;
+  color: rgb(221, 14, 124);
+  font-weight: bolder;
+}
+
+#input_city{
+  padding: 5px;
+  font-size: smaller;
+}
+
+#btn_show{
+  width:90px;
+  height: 35px;
+  font-weight: bold;
+  background-color: rgb(216, 152, 199);
+  border-radius: 6px;
+  color:white;
+  transition: background-color 0.3s ease-in;
+}
+
+#btn_show:hover{
+  background-color: rgb(243, 5, 227);
+}
+
+#day{
+  background-color: rgb(45, 40, 40);
+}
+
+.btn{
+  float: left;
+}
+
+#card{
+  margin-top: 10px;
+  width: 100%;
+  background-color: rgb(218, 213, 213);
+}
+
+#four_days_main{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 10px;
+}
+
+.four_days{
+  padding: 10px;
+  background: white;
+  border: 1px solid #D9E4E6;
+  border-radius: 5px;
+}
+
+.four_days_title{
+  font-size: 16px;
+  font-weight: 700;
+  color:rgb(45, 130, 86);
+}
+
+.four_days_degree{
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.four_days_div_img{
+  align-self: center;
+  justify-self: center;
+}
+
+.four_days_img{
+  height: 70px;
+}
+
+.four_days_div_title{
+  margin-left: 16px;
+}
+
+.month_and_day{
+  font-size: 14px;
+}
+
+/* first_div */
+#first_div{
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+}
+
+#first_div_cards{
+  display: flex;
+  justify-content: space-around;
+}
+
+#first_div_current_weather{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color:rgb(45, 130, 86);
+  font-weight: bolder;
+}
+
+#first_div_cards_second_temp{
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#sunrise{
+  display: flex;
+  justify-content:space-between;
+}
+
+#sunset{
+  display: flex;
+  justify-content:space-between;
+}
+
+#first_div_cards_third{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* second_div */
+#second_div{
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+}
+
+#div_grid{
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+#hourly{
+  color:rgb(45, 130, 86);
+  font-weight: bolder;
+}
+
+#icon{
+  height: 70px;
+}
+
+img{
+  height: 40px;
+}
+
+#weather_desc{
+  text-align: center;
+}
+
+#error{
+  height: 200px;
+}
+
+#error_txt{
+  text-align: center;
+  margin: 10px;
+}

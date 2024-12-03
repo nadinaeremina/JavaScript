@@ -1,0 +1,25 @@
+.field{
+    width: 760px;
+    min-width: 760px;
+    height: 570px;
+    min-height: 570px;
+    background-image: url('../img/field.jpg');
+}
+
+.ball{
+    position: absolute;
+    left: 362px;
+    top: 268px;
+}
+
+.board{
+    position: absolute;
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    background-color:antiquewhite;
+    width: 70px;
+    left: 348px;
+    top:19px;
+}
+

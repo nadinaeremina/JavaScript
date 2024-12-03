@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #id_orderItem,  #id_orderTable{
+            margin-bottom: 20px;
+        }
+ 
+        #id_orderTable tr, #id_orderTable td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Заявка на поставку</h2>
+
+    <table id="id_orderItem">
+        
+        <thead>
+            <tr>
+                <th>Категория</th>
+                <th>Тип</th>
+                <th>Производитель</th>
+                <th>Модель</th>
+                <th>Количество</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>
+                    <select name="newItemCategory">
+                        <option></option>
+                        <option>Холодильники</option>
+                        <option>Микроволновки</option>
+                        <option>Электроплиты</option>
+                     </select>
+                </td>
+                <td>
+                    <select style="width: 160px;" name="newItemType">
+                     </select>
+               </td>
+               <td>
+                    <select name="newItemManuf">
+                        <option>Indezit</option>
+                        <option>Candy</option>
+                        <option>Hyundai</option>
+                        <option>Siemens</option>
+                        <option>Liebherr</option>
+                     </select>
+                </td>
+                <td>
+                    <select name="newItemModel">
+                        <option>K187SADDO</option>
+                        <option>CT5045FIX</option>
+                        <option>TX 1021</option>
+                        <option>T 1400</option>
+                        <option>T Pesf 1714</option>
+                     </select>
+                </td>
+                <td>
+                    <!-- каждый раз при нажатии будет добавляться +1 к 'value' -->
+                    <input type = "number" min = "1" name = "newItemQty" value ="1"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type ="button" name="addItemToOrder" value="Add to order"/>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <table id="id_orderTable">
+        <thead>
+            <tr>
+                <th>Категория</th>
+                <th>Тип</th>
+                <th>Производитель</th>
+                <th>Модель</th>
+                <th>Количество</th>
+            </tr>
+        </thead>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

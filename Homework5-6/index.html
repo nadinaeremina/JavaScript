@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #registr{
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 900;
+            font-size: 20px;
+            margin-bottom: 30px;
+            text-decoration: underline;
+        }
+        form{
+            width: 450px;
+            padding-bottom: 20px;
+        }
+        .btn{
+            width: 100px;
+            height: 30px;
+            margin-top: 20px;
+        }
+        #error{
+            display: flex;
+            justify-content: center;
+        }
+        #offers{
+            background-color: aquamarine;
+            padding-left: 20px;
+            padding-right: 20px;
+            width: 450px;
+        }
+        .my_ul{
+            background-color: rgb(184, 79, 79);
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        #main_div{
+            background-color: rgb(178, 151, 151);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .my_input{
+            width: 270px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main_div">
+        <form id="id_formlogin" action="process_submit.php" method="post" >
+
+            <div align="center" id="registr">
+                <p><i>Регистрация:</i></p>
+            </div>
+    
+            <table>
+    
+                <tr>
+                    <td>Имя:</td>
+                    <td>
+                        <input class="my_input" type="text" name="name" placeholder="Введите имя"/>
+                    </td>
+                 </tr>
+     
+                <tr>
+                    <td>Фамилия:</td>
+                    <td>
+                        <input class="my_input" type="text" name="lastname" placeholder="Введите фамилию"/>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>Email:</td>
+                    <td>
+                        <input class="my_input" type="email"  name="email" placeholder="user@gmail.com"/>
+                    </td>
+                </tr>
+               
+                <tr>
+                    <td>Дата рождения:</td>
+                    <td>
+                        <input class="my_input" type="date" name="date_bd" min="1900-01-01">
+                    </td>
+                 </tr>
+
+                <tr>
+                    <td>Пол:</td>
+                    <td>
+                        <label for="m">Мужской</label>
+                        <input type="radio" name="gender" id="m" value="male" >
+                        
+                        <label for="fm">Женский</label>
+                        <input type="radio" name="gender" id="fm" value="female">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Список технологий которые вы знаете:</td>
+                    <td>
+                        Python<input class="list_teh" type="checkbox" name="t_c++" value="1"/>&nbsp;&nbsp;
+                        C++<input class="list_teh" type="checkbox" name="t_uml" value="1"/>&nbsp;&nbsp;
+                        C#<input class="list_teh" type="checkbox" name="t_c#" value="1"/>&nbsp;&nbsp;
+                        Java<input class="list_teh" type="checkbox" name="t_java" value="1"/>&nbsp;&nbsp;
+                        MS SQL<input class="list_teh" type="checkbox" name="t_ms_sql" value="1"/>&nbsp;&nbsp;
+                        JavaScript<input class="list_teh" type="checkbox" name="t_js" value="1"/>&nbsp;&nbsp;
+                        UML<input class="list_teh" type="checkbox" name="t_uml" value="1"/>&nbsp;&nbsp;
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td>
+                        <input type="reset" class="btn" value="Сбросить"/>
+                    </td>
+                    <td>
+                        <input  type="submit" class="btn" value="Войти"/>
+                    </td>
+                </tr>
+               
+            </table>
+        </form>
+    
+        <div id="error"></div>
+
+        <div id="offers"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

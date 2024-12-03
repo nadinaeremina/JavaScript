@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/grid.css">
+
+     <!-- вставили из 'Bootstrap' (CSS)-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+     crossorigin="anonymous">
+</head>
+<body>
+
+    <!-- шапка страницы вручную -->
+    <header id="my_header">
+        <div id="my_title">MY WEATHER</div>
+        <div id="search">
+            <input id="input_city" type="text" placeholder="Введите город">
+            <button id="btn_show">Показать</button>
+        </div>
+    </header>
+
+    <!-- работа с 'Bootstrap' -->
+    <nav class="navbar navbar-light bg-light">
+        <form class="form-inline">
+          <button class="btn btn-outline-success" type="button">Today</button>
+          <button class="btn btn-sm btn-outline-secondary" type="button">5-day forecast</button>
+        </form>
+    </nav>    
+   
+    <!-- подключение ссылки для работы с jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- подключение скриптов -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/promise_func.js"></script>
+    <script src="scripts/short_func.js"></script>
+
+</body>
+</html>
